@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: hsl(204, 43%, 93%);
+      font-family: "Karla", sans-serif;
+      font-size: 16px;
+    }
+
+    h1 {
+      color: hsl(179, 62%, 43%);
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: hsl(71, 73%, 54%);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 675px;
+      height: 500px;
+      margin: auto;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0px 11px 20px 0px hsla(0, 0%, 0%, 0.10);
+    }
+
+    .pricing__description {
+      flex: 0 0 calc(100% - 80px);
+      padding: 40px;
+      color: hsl(218, 22%, 67%);
+    }
+
+    .description__main {
+      line-height: 1.5;
+     -webkit-text-stroke-width: 0.1px;
+     -webkit-text-stroke-color: white;
+    }
+
+    .pricing__cta,
+    .pricing__reasons {
+      flex: 0 0 calc(50% - 80px);
+      color: white;
+      padding: 40px;
+    }
+
+    .pricing__cta {
+      background-color: hsl(179, 62%, 43%);
+      border-radius: 0 0 0 10px;
+    }
+
+    .cta {
+      margin-bottom: 10px;
+    }
+
+    .cta__price{
+      font-size: 32px;
+      margin-right: 10px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+
+    .cta__duration {
+     -webkit-text-stroke-width: 0.3px;
+     -webkit-text-stroke-color: hsl(179, 50%, 55%);
+     font-size: 16px;
+     font-weight: 400;
+    }
+
+    .cta__description {
+      margin-bottom: 30px;
+    }
+
+    .pricing__reasons {
+      background-color: hsl(179, 50%, 55%);
+      border-radius: 0 0 10px 0;
+    }
+
+    .reasons__list {
+      list-style: none;
+      line-height: 1.4;
+      font-size: 14px;
+    }
+
+    .reasons__list li {
+     -webkit-text-stroke-width: 0.3px;
+     -webkit-text-stroke-color: hsl(179, 50%, 55%);
+    }
+
+    .btn-yellow {
+      background-color: hsl(71, 73%, 54%);
+      border-radius: 5px;
+      text-align: center;
+      padding: 15px 0;
+      box-shadow: 0px 6px 13px 0px hsla(0, 0%, 0%, 0.15);
+    }
+
+    .btn-yellow:hover {
+      background-color: hsl(218, 22%, 67%);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 500px) {
+      .pricing {
+        width: 360px;
+        height: auto;
+      }
+
+      .pricing__description p {
+          display: inline;
+          line-height: 1.8;
+      }
+
+      .pricing__description {
+        flex: 0 0 calc(100% - 60px);
+        padding: 30px;
+      }
+
+      .pricing__cta,
+      .pricing__reasons {
+        flex: 0 0 calc(100% - 60px);
+        padding: 30px;
+      }
+
+      .pricing__cta {
+        border-radius: 0px;
+      }
+
+      .pricing__reasons {
+        border-radius: 0px 0px 10px 10px;
+      }
+
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="pricing">
+    <div class="pricing__description">
+      <h1>Join our community</h1>
+
+      <h2>30-day, hassle-free money back guarantee</h2>
+
+      <p class="description__main">Gain access to our full library of tutorials along with expert code reviews.</p>
+      <p class="description__main">Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+    <div class="pricing__cta">
+      <h3>Monthly Subscription</h3>
+
+      <p class="cta">
+        <span class="cta__price">&dollar;29</span> <span class="cta__duration">per month</span>
+      </p>
+
+      <p class="cta__description">Full access for less than &dollar;1 a day</p>
+
+      <div class="btn-yellow">Sign Up</div>
+    </div>
+    <div class="pricing__reasons">
+      <h3>Why Us</h3>
+
+      <ul class="reasons__list">
+        <li>Tutorials by industry experts</li>
+        <li>Peer &amp; expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Karina Dube</a>.
+    </p>
+  </footer>
+</body>
+</html>
