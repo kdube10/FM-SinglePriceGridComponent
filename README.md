@@ -1,5 +1,8 @@
 This is the first design challenge from Frontend Mentor I've tried. I chose something simple to get familiar with the site, learn the process, and hopefully get some good feedback on my code! 
 
+Find all my CSS for the solution in the index file.
+Find the live site here: https://kdube10.github.io/FM-SinglePriceGridComponent/
+
 
 # Frontend Mentor - Single Price Grid Component
 
